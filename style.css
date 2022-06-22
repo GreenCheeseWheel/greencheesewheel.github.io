@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 
 
 /*-- VARIABLES SECTION --*/
 
 :root {
-    --color__fondo: #ddd;
-    --color__fondo___body: #ccc;
-    --color__fondo___about: #bbb;
-    --color__fondo___skills: #ddd;
+    --color__fondo: rgb(245, 245, 245);
+    --color__fondo___body: rgb(238, 238, 238);
     --color__botones: #006cc2;
 
     --imagen__width: 100px;
@@ -33,8 +32,10 @@ body {
 
     text-align: center;
 
-    font-weight: 600;
-    font-family: Arial, sans-serif;
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "League Spartan", "Montserrat";
 }
 
 
@@ -44,6 +45,7 @@ body {
 
 header {
     width: 100%;
+    background-color: var(--color__fondo);
 
 }
 
@@ -84,17 +86,25 @@ header {
 /*-- PRESENTING-YOURSELF SECTION --*/
 
 .header__presentacion {
-    width: 100%;
+    width: 75%;
+    margin: auto;
+    padding: 1.2rem 0;
 
     display: flex;
     flex-direction: row;
-    padding: 1.2rem 0;
-    justify-content: center;
+    
 }
 
 .presentacion__presentacion {
-    width: 60%;
+    width: 51%;
     
+}
+
+.presentacion__titular {
+    font-family: "Montserrat", "League Spartan";
+    font-size: 2rem;
+
+    text-align: left;
 }
 
 .presentacion__imagen img {
@@ -118,6 +128,8 @@ header {
 
     margin-top: 0.3rem;
     margin-right: 0;
+    border-radius: 4px;
+
     text-decoration: none;
     color: black;
 
@@ -128,6 +140,9 @@ header {
     margin-left: 1px;
 }
 
+.header__presentacion___links:active {
+    background-color: #999;
+}
 
 
 
@@ -144,10 +159,14 @@ main {
 /*-- ABOUT-ME SECTION --*/
 
 .about__container {
-    width: 100%;
+    width: 75%;
     line-height: 1.2rem;
-    text-align: center;
-    background-color: var(--color__fondo___about);
+    margin: auto;
+    text-align: start;
+}
+
+.about__me {
+    text-align: left;
 }
 
 .rodapie {
@@ -192,12 +211,17 @@ main {
         text-align: center;
 
         padding: 1rem 0;
+        justify-content: center;
     }
 
     .presentacion__presentacion {
         width: 100%;
     }
     
+    .presentacion__imagen {
+        text-align: left;
+    }
+
     .presentacion__imagen img {
         width: auto;
         flex-shrink: 1;
@@ -232,7 +256,7 @@ main {
         width: 100%;
         line-height: 1.2rem;
         text-align: center;
-        background-color: var(--color__fondo___about);
+        
     }
 
 }

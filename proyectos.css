@@ -7,7 +7,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
 
-    background-color: var(--color__fondo___skills);
+    background-color: var(--color__fondo);
 }
 
 .proyectos__list {
@@ -36,7 +36,7 @@
     text-align: center;
  
     border-radius: 10px;
-    background-color: #eee;
+    background-color: white;
 }
 
 .proyectos__item img {
