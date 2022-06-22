@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
+/*-- VARIABLES SECTION --*/
+
+:root {
+    --color__fondo: #ddd;
+    --color__fondo___body: #ccc;
+    --color__fondo___about: #bbb;
+    --color__fondo___skills: #ddd;
+    --color__botones: #006cc2;
+
+    --imagen__width: 100px;
+    --imagen__height: 80px;
+}
+
+
+
+
+/*-- GENERAL SECTION --*/
+
+body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: var(--color__fondo___body);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container__titular {
+    width: 100%;
+    margin: 0.5rem 0;
+
+    text-align: center;
+
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+/*-- HEADER SECTION --*/
+
+header {
+    width: 100%;
+
+}
+
+.nav__container {
+    
+    width: calc(100% - 0.3rem);
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content:space-around;
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+   
+
+    justify-content: space-around;
+    
+}
+
+.header__links___item {
+    margin: auto 0.3rem;
+    
+    font-size: 0.9rem;
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+
+
+
+/*-- PRESENTING-YOURSELF SECTION --*/
+
+.header__presentacion {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    padding: 1.2rem 0;
+    justify-content: center;
+}
+
+.presentacion__presentacion {
+    width: 60%;
+    
+}
+
+.presentacion__imagen img {
+    width: auto;
+}
+
+.div__presentacion___links {
+    margin: 0.2rem auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-size: 0.8rem;
+}
+
+.header__presentacion___links {
+    
+    width: 30%;
+
+    margin-top: 0.3rem;
+    margin-right: 0;
+    text-decoration: none;
+    color: black;
+
+}
+
+.header__presentacion___links::after {
+    content: '\1F86D';
+    margin-left: 1px;
+}
+
+
+
+
+/*-- MAIN SECTION --*/
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+
+
+
+/*-- ABOUT-ME SECTION --*/
+
+.about__container {
+    width: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    background-color: var(--color__fondo___about);
+}
+
+.rodapie {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+
+@media screen and (orientation: portrait) {
+
+    .nav__container {
+    
+        width: calc(100% - 0.3rem);
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+        justify-content: space-around;
+    }
+
+    .header__links {
+        padding: 0.5rem 0;
+        
+    }
+
+    .header__links___item {
+        margin: auto 0.3rem;
+       
+        font-size: 0.9rem;
+        color: #222;
+        text-decoration: none;
+        border-bottom: 1px solid #444;
+    }
+
+
+    .header__presentacion {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        padding: 1rem 0;
+    }
+
+    .presentacion__presentacion {
+        width: 100%;
+    }
+    
+    .presentacion__imagen img {
+        width: auto;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+    
+    .div__presentacion___links {
+        margin: auto;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        font-size: 0.8rem;
+    }
+    
+    .header__presentacion___links {
+        width: 100%;
+        margin-top: 0.6rem;
+        
+        text-decoration: none;
+        color: black;
+    
+    }
+    
+    .header__presentacion___links::after {
+        content: '\1F86D';
+        margin: 0.5vh 0;
+    }
+
+    .about__container {
+        width: 100%;
+        line-height: 1.2rem;
+        text-align: center;
+        background-color: var(--color__fondo___about);
+    }
+
+}

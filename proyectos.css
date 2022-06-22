@@ -1,0 +1,48 @@
+.proyectos__container {
+    
+    height: auto;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    background-color: var(--color__fondo___skills);
+}
+
+.proyectos__list {
+    width: 75vw;
+    height: 100%;
+
+    margin: auto;
+    padding: 20px 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: auto;
+    
+    row-gap: 0.5rem;
+    
+}
+
+.proyectos__item {
+    display: flex;
+    width: var(--imagen__width);
+    height: calc(var(--imagen__height) + 2.5rem);
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+ 
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.proyectos__item img {
+    width: var(--imagen__width);
+    height: var(--imagen__height);
+
+    background-color: blueviolet;
+    border-radius: 5px;
+}
