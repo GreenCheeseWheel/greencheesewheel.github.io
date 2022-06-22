@@ -176,7 +176,7 @@ main {
 
 
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 650px) {
 
     .nav__container {
     
