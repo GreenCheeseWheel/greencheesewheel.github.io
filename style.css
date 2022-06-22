@@ -11,6 +11,9 @@
 
     --imagen__width: 100px;
     --imagen__height: 80px;
+
+    --tablet__phone___width: 768px;
+    --laptop__desktop___width: 992px;
 }
 
 
@@ -176,7 +179,7 @@ main {
 
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: var(--tablet__phone___width)) {
 
     .nav__container {
     
