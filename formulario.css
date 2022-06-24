@@ -1,10 +1,14 @@
+
+
 .contacto__form {
     width: 75%;
+    height: 100%;
     margin: auto;
 }
 
 .contacto__form fieldset{
     display: flex;
+    height: 100%;
     padding-top: 0.5rem;
 }
 
@@ -15,21 +19,26 @@
 
 .contacto__image {
     background-color: inherit;
-    height: auto;
+    height: 350px;
 }
 
 .campos {
     display: flex;
     flex-direction: column;
+    
     margin-left: 1rem;
+    justify-content: space-evenly;
+
     flex-grow: 1;
+    justify-content: space-evenly;
 
 }
 
 .campos__item {
     width: auto;
     height: 30px;
-    margin-top: 0.3rem;
+    
+
     flex-shrink: 1;
 
     outline: none;

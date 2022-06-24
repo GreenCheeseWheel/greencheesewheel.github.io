@@ -48,6 +48,7 @@ body {
 
 header {
     width: 100%;
+    padding-top: 1rem;
     background-color: var(--color__fondo);
 
 }
@@ -80,10 +81,13 @@ header {
     font-size: 0.9rem;
     color: #222;
     text-decoration: none;
-    border-bottom: 1px solid #444;
+    
 }
 
+.header__links___item:last-child {
+    font-weight: bold;
 
+}
 
 
 /*-- PRESENTING-YOURSELF SECTION --*/
@@ -111,7 +115,8 @@ header {
 }
 
 .presentacion__imagen img {
-    width: auto;
+    
+    border-radius: 100%;
 }
 
 .div__presentacion___links {
@@ -197,13 +202,10 @@ main {
         
     }
 
-    .header__links___item {
-        margin: auto 0.3rem;
-       
-        font-size: 0.9rem;
-        color: #222;
-        text-decoration: none;
-        border-bottom: 1px solid #444;
+    .header__links___item:not(.header__links___item:last-child) {
+
+        display: none;
+        
     }
 
 
@@ -217,13 +219,23 @@ main {
         justify-content: center;
     }
 
+    
     .presentacion__presentacion {
         width: 100%;
     }
-    
+
+    .presentacion__titular {
+        text-align: center;
+    }
+
     .presentacion__imagen {
         text-align: left;
     }
+
+    .presentacion__imagen img {
+        height: 100px;
+    }
+
 
     .presentacion__imagen img {
         width: auto;
