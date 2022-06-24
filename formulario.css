@@ -78,6 +78,10 @@
         display: none;
     }
 
+    .campos__item {
+        margin-top: 0.8rem;
+    }
+
     .enviar {
 
         font-size: 0.7rem;
